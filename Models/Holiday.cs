@@ -39,6 +39,8 @@ namespace VacationManager.Models
 
         [DisplayName("Patient note")]
         public string? PatientNote { get; set; }
+        [DisplayName("Brand")]
+        public string? Brand { get; set; }
 
         [Required]
         [DisplayName("Requester")]
