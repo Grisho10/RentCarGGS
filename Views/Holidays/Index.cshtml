@@ -11,48 +11,40 @@
 </p>
 <table class="table">
     <thead>
-        <tr>
+        <tr>         
+            <th>
+                Type
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Brand
+            </th>
+            <th>
+                Model
+            </th>
+            <th>
+                Year
+            </th>
+            <th>
+                Passenger seats
+            </th>
+            <th>
+                Price/day
+            </th>
             <th>
                 Start date
             </th>
             <th>
                 End date
             </th>
-            <th>
-                Request date
-            </th>
-            
-            <th>
-                Approved
-            </th>
-            <th>
-                Type
-            </th>
-            <th>
-                Patient note
-            </th>
-            <th>
-                Brand
-            </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var request in Model) {
-        <tr>
-            <td>
-                @request.StartDate
-            </td>
-            <td>
-                    @request.EndDate
-            </td>
-            <td>
-                    @request.DateOfRequest
-            </td>
-            
-            <td>
-                    @Html.DisplayFor(modelItem => request.IsApproved)
-            </td>
+        <tr>      
             <td>
                     @request.Type
             </td>
@@ -61,6 +53,24 @@
             </td>
                 <td>
                     @request.Brand
+                </td>
+                <td>
+                    @request.Model
+                </td>
+                <td>
+                    @request.Year
+                </td>
+                <td>
+                    @request.Passengerseats
+                </td>
+                <td>
+                    @request.Priceday
+                </td>
+                <td>
+                    @request.StartDate
+                </td>
+                <td>
+                    @request.EndDate
                 </td>
             <td>
 
