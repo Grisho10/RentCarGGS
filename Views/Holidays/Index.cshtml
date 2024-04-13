@@ -21,9 +21,7 @@
             <th>
                 Request date
             </th>
-            <th>
-                Half day
-            </th>
+            
             <th>
                 Approved
             </th>
@@ -32,6 +30,9 @@
             </th>
             <th>
                 Patient note
+            </th>
+            <th>
+                Brand
             </th>
             <th></th>
         </tr>
@@ -48,9 +49,7 @@
             <td>
                     @request.DateOfRequest
             </td>
-            <td>
-                    @Html.DisplayFor(modelItem => request.IsHalfDay)
-            </td>
+            
             <td>
                     @Html.DisplayFor(modelItem => request.IsApproved)
             </td>
@@ -60,6 +59,9 @@
             <td>
                     @request.PatientNote
             </td>
+                <td>
+                    @request.Brand
+                </td>
             <td>
 
                     <a asp-action="Details" asp-route-id="@request.Id" class="text-info">Details</a> 
